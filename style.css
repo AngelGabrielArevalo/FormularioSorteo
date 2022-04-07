@@ -20,9 +20,9 @@ body{
 
 .div-contenedor{
     margin: 3rem auto;
-    width: 50%;
     font-family: 'Poppins', sans-serif;
     color:#f3f3f3;
+    width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -32,7 +32,7 @@ body{
   }
   
   @media (min-width: 768px) {
-    ..div-contenedor {
+    .div-contenedor {
       max-width: 720px;
     }
   }
