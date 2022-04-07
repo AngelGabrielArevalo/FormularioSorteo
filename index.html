@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="div-contenedor" class="div-contenedor">
+        <header id="header">
+            <h1 id="titulo">
+                Formulario
+            </h1>
+            <p id="descripcion">
+                Formulario de inscripción a sorteo de PC gamer
+            </p>
+        </header>
+        <form id="formulario">
+            <!-- Nombre -->
+            <div class="campoform divnombre">
+                <label for="nombre" class="label">
+                    Nombre
+                </label>
+                <input 
+                type="text"
+                id="nombre"
+                class="input-datos"
+                placeholder="Introduzca su nombre" 
+                required />
+            </div>
+            <!-- Apellido -->
+            <div class="campoform">
+                <label for="apellido" class="label">
+                    Apellido
+                </label>
+                <input 
+                type="text"
+                id="apellido"
+                class="input-datos"
+                placeholder="Introduzca su apellido" 
+                required />
+            </div>
+            <!-- DNI -->
+            <div class="campoform">
+                <label for="dni" class="label">
+                    DNI 
+                </label>
+                <input 
+                type="number"
+                id="dni"
+                class="input-datos"
+                placeholder="DNI"
+                min="0000001"
+                max="99999999"
+                required />
+            </div>
+            <!-- Email -->
+            <div class="campoform">
+                <label for="email" class="label">
+                    Email
+                </label>
+                <input 
+                type="email"
+                id="email"
+                class="input-datos"
+                placeholder="Introduzca su email"
+                required />
+            </div>
+            <!-- Edad -->
+            <div class="campoform">
+                <label for="edad" class="label">
+                    Edad
+                </label>
+                <input 
+                type="number"
+                id="edad"
+                class="input-datos"
+                placeholder="Edad"
+                min="18"
+                max="100" 
+                required />
+            </div>
+            <!-- Select -->
+            <div class="campoform">
+                <label for="select" class="label">
+                    ¿Cómo se enteró del sorteo?
+                </label>
+                <select id="select">
+                    <option value="seleccione" class="opciones" selected  disabled>
+                        Seleccione...
+                    </option>
+                    <option value="redes" class="opciones">
+                        Redes sociales
+                    </option>
+                    <option value="amigos" class="opciones">
+                        Amigos
+                    </option>
+                    <option value="twitch" class="opciones">
+                        Twitch
+                    </option>
+                </select>
+            </div>
+            <!-- Input-radio -->
+            <div class="campoform">
+                <p class="ptit">
+                    Seleccione su marca de PC favorita
+                </p>
+                <label class="label">
+                    <input type="radio" class="inputradio" name="marca" value="amd" checked> 
+                    AMD
+                </label>
+                <label class="label">
+                    <input type="radio" class="inputradio" name="marca" value="intel">
+                    Intel
+                </label>
+                <label class="label">
+                    <input type="radio" class="inputradio" name="marca" value="mac">
+                    Mac
+                </label>
+            </div>
+            <!-- checkbox -->
+            <div class="campoform">
+                <p class="ptit">¿Qué perisfericos le gustaria obtener?</p>
+                <label class="label">
+                    <input type="checkbox" class="check" value="teclado" name="perisferico">
+                    Teclado
+                </label>
+                <label class="label">
+                    <input type="checkbox" class="check" value="auriculares" name="perisferico">
+                    Auriculares
+                </label>
+                <label class="label">
+                    <input type="checkbox" class="check" value="mouse" name="perisferico">
+                    Mouse
+                </label>
+                <label class="label">
+                    <input type="checkbox" class="check" value="parlantes" name="perisferico">
+                    Parlantes
+                </label>
+                <label class="label">
+                    <input type="checkbox" class="check" value="impresora" name="perisferico">
+                    Impresora
+                </label>
+                <label class="label">
+                    <input type="checkbox" class="check" value="pendrive" name="perisferico">
+                    Pendrive
+                </label>
+            </div>
+            <!-- Comentarios -->
+            <div class="campoform">
+                <label for="comentario" class="label">
+                    ¿Tiene comentarios que agregar?
+                </label>
+                <textarea id="comentario" placeholder="Introduzca sus comentarios..."></textarea>
+            </div>
+            <!-- enviar -->
+            <div class="campoform">
+                <input type="submit" id="enviar">
+            </div>
+        </form> 
+    </div>
+</body>
+</html>
